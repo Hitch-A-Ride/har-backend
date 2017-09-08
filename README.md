@@ -3,7 +3,7 @@
 This is the backend service for Slack hooks.
 
 
-## Technology Used
+## Technology used
 
 - Flask
 - Firebase
