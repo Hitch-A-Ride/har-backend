@@ -5,6 +5,7 @@ import logging
 import sys
 from flask import Flask
 from flask import jsonify
+from flask_cors import CORS
 from flask_swagger import swagger
 from api.utils.database import db
 from api.utils.responses import response_with
@@ -14,6 +15,7 @@ from api.routes.routes_general import route_path_general
 
 def create_app(config):
     app = Flask(__name__)
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     app.config.from_object(config)
 
