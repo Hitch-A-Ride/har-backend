@@ -7,3 +7,12 @@ This is the backend service for Slack hooks.
 
 - Flask
 - Firebase
+
+## Run
+
+- install virtualenv
+- virtualenv venv
+- bin/source/activate venv
+- pip install -r requirements.txt
+- python -m run
+
